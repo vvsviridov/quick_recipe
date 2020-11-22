@@ -14,7 +14,7 @@ const  App = () => {
     fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes&q=${query}`, {
       "method": "GET",
       "headers": {
-        "x-rapidapi-key": "60be72d7d8mshb5daa76c233a759p1d3d20jsn112ccceb5ced",
+        "x-rapidapi-key": "",
         "x-rapidapi-host": "tasty.p.rapidapi.com"
       }
     })
