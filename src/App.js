@@ -5,6 +5,7 @@ import RecipeGrid from './components/recipes/RecipeGrid'
 import { useState, useEffect } from "react";
 import Search from './components/ui/Search'
 
+
 const  App = () => {
   const [items, setItems] = useState([])
   const [isLoading, setIsLoading] = useState(true)
@@ -14,7 +15,7 @@ const  App = () => {
     fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes&q=${query}`, {
       "method": "GET",
       "headers": {
-        "x-rapidapi-key": "",
+        "x-rapidapi-key": process.env.REACT_APP_APIKEY,
         "x-rapidapi-host": "tasty.p.rapidapi.com"
       }
     })
